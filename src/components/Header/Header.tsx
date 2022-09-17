@@ -18,7 +18,7 @@ const Header: FC<HeaderProps> = () => (
                 <div className="collapse navbar-collapse" id="collapsibleNavbar" >
                   <ul className="navbar-nav uppercase">
                     <li className="nav-item">
-                      <Link to="shopPage">Buy sprinkles</Link>
+                      <Link to="shop">Buy sprinkles</Link>
                     </li> &nbsp;
                     <li className="nav-item">
                     <a href="#">Contact Us</a>

@@ -44,8 +44,8 @@ h6 {
 }
 
 h1 {
-    font-size: 46px;
-    line-height: 56px;
+    font-size: 70px;
+    line-height: 75px;
 }
 
 h2 {
@@ -154,6 +154,7 @@ div {
 section {
     z-index: 0;
     padding: 60px 0;
+    overflow: hidden;
     position: relative;
 }
 
@@ -211,6 +212,14 @@ button:active {
 
 .pink {
     color: #FD5BE2;
+}
+
+.holographic_text {
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url(./assets/images/bg_image.png);
+    background-size: contain;
 }
 
 .black {
@@ -481,16 +490,17 @@ footer .copy_wright p {
 
 .shop_page ul li:nth-child(1) button,
 .shop_page ul li button:hover {
-    color: #fff !important;
-    background: #FD5BE2 !important;
-    border: 1px solid #FD5BE2;
+    color: #000 !important;
+    background: url(./assets/images/bg_image.png);
+    background-size: cover;
+    border: unset;
     opacity: 1;
 }
 
 .shop_page ul li:nth-child(1) button:hover {
     color: #fff !important;
-    background: #000 !important;
-    border: 1px solid #000 !important;
+    background: #FD5BE2 !important;
+    border: 1px solid #FD5BE2 !important;
 }
 
 .shop_page p{
@@ -539,7 +549,7 @@ footer .copy_wright p {
 	background: url(./assets/images/bg_image.png) no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding: 40px 0;
+	padding: 60px 0;
 }
 
 .brand_logo ul {

@@ -21,7 +21,7 @@ const ShopPage: FC<ShopPageProps> = () => (
               </ul>
               <p>Start with birthday cards, nfts for private events,  loyalty cards, sharing your art or media, and so much more!</p>
               <h3>$19.99</h3>
-              <button className="pink_link">Buy Now</button>
+              <button className="link">Buy Now</button>
             </div>
           </div>
         </div>

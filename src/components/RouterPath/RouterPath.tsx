@@ -11,7 +11,7 @@ return(
         <Header/>
             <Routes>
                 <Route path="/" element={<LandingPage/>}/>
-                <Route path="shopPage" element={<ShopPage/>}/>
+                <Route path="shop" element={<ShopPage/>}/>
             </Routes>
         </BrowserRouter>
     </div>

@@ -10,9 +10,9 @@ const LandingPage: FC<LandingPageProps> = () => (
           <div className="container">
             <div className="row align-items-center rev">
               <div className="col-md-6">
-                <h1>Physical<br /> Meets<br /> <span className="pink"> Digital</span></h1>
+                <h1>Physical<br /> Meets<br /> <span className="holographic_text"> Digital</span></h1>
                 <p>Join over <b className="black">30,000 users</b> and top brands using cupcake</p>
-                <a href="#" className="link">Buy Sprinkles</a>
+                <a href="shop" className="link">Buy Sprinkles</a>
               </div>
               <div className="col-md-6 floating">
                 <img src={require('../../assets/images/hero-image.png')} />
@@ -49,7 +49,7 @@ const LandingPage: FC<LandingPageProps> = () => (
               <div className="col-md-8">
                 <h2>Partner with us<br /> today</h2>
                 <p>Work with our partner team to build a custm experience for your brand.</p>
-                <a href="#" className="pink_link">Contact us</a>
+                <a href="#" className="link">Contact us</a>
               </div>
               <div className="col-md-4 ">
               <div className="hover14">
