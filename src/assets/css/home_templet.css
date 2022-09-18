@@ -1,0 +1,77 @@
+
+.slider {}
+
+/*-- Brand Logo --*/
+.brand_logo {
+	background: url(../images/bg_image.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 40px 0;
+}
+
+.brand_logo ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.brand_logo ul li {
+	display: flex;
+	flex: 0 0 25%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.brand_logo ul li span {
+	padding: 20px;
+}
+
+.brand_logo ul li img {
+	max-height: 40px;
+	max-width: 100%;
+	width: auto;
+}
+
+
+/*-- Partner --*/
+.partner {
+	background: url(../images/Group2.png) no-repeat;
+    background-position: right center;
+    background-size: 150px;
+}
+
+
+
+/*-- Responsive --*/
+@media (max-width: 768.5px) {
+    .brand_logo ul li img {
+        max-height: 30px;
+    }
+    .brand_logo ul li span {
+        padding: 15px;
+    }
+}
+@media (max-width: 767.5px) {
+	.rev {
+    flex-direction: column-reverse;
+}
+.slider {
+    text-align: center;
+}
+.slider h1 {
+    margin-top: 20px;
+}
+.slider a.link {
+    margin-bottom: 50px;
+}
+.brand_logo ul {
+    justify-content: center;
+}
+.brand_logo ul li {
+    flex: 0 0 33.3333% !important;
+}
+.partner .row {
+	text-align: center;
+	flex-direction: column-reverse;
+} 
+}
