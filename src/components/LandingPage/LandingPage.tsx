@@ -10,7 +10,7 @@ const LandingPage: FC<LandingPageProps> = () => (
           <div className="container">
             <div className="row align-items-center rev">
               <div className="col-md-6">
-                <h1>Physical<br /> Meets<br /> <span className="pink"> Digital</span></h1>
+                <h1>Physical<br /> Meets<br /> <span className="holographic_text"> Digital</span></h1>
                 <p>Join over <b className="black">30,000 users</b> and top brands using cupcake</p>
                 <a href="shop" className="link">Buy Sprinkles</a>
               </div>

@@ -43,8 +43,8 @@ h6 {
     transition: 0.3s ease-in-out;
 }
 h1 {
-    font-size: 46px;
-    line-height: 56px;
+    font-size: 70px;
+    line-height: 75px;
 }
 
 h2 {
@@ -323,10 +323,6 @@ footer .subscribebox .footer_check p {
 footer .subscribebox button {
     margin-bottom: 20px;
 }
-footer .subscribebox button:hover {
-    background: #fff !important;
-    color: #000 !important;
-}
 footer .copy_wright img {
     width: auto;
     max-width: 200px;
@@ -562,6 +558,7 @@ footer .copy_wright p {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
+    cursor: pointer;
 }
 
 .brand_logo ul li span {
