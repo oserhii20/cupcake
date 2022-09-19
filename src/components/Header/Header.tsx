@@ -21,7 +21,7 @@ const Header: FC<HeaderProps> = () => (
                       <Link to="shop" className="nav-link">Buy sprinkles</Link>
                     </li> &nbsp;
                     <li className="nav-item">
-                    <a href="#" className="nav-link">Contact Us</a>
+                    <a href="https://form.typeform.com/to/aIrTJmFt?typeform-source=cupcake.com" target={"_blank"} className="nav-link">Contact Us</a>
 
 
                     </li>
@@ -29,7 +29,7 @@ const Header: FC<HeaderProps> = () => (
                 </div>
               </nav>
               <div className="dhr_btn">
-                <a href="#" className="link">Login</a>
+                <a href="https://cupcake.com/wallet" target={"_blank"} className="link">Login</a>
               </div>
             </div>
           </div>
