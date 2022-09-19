@@ -11,8 +11,8 @@ const Footer: FC<FooterProps> = () => (
               <li>
                 <h6>Cupcake</h6>
                 <a href="#" className="footer_btn">Buy sprinkles</a>
-                <a href="#" className="footer_btn">Contact us</a>
-                <a href="#" className="footer_btn">Login</a>
+                <a href="https://form.typeform.com/to/aIrTJmFt?typeform-source=cupcake.com" target={"_blank"} className="footer_btn">Contact us</a>
+                <a href="https://cupcake.com/wallet" target={"_blank"} className="footer_btn">Login</a>
               </li>
               <li>
                 <h6>Company</h6>
