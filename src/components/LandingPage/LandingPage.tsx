@@ -14,8 +14,9 @@ const LandingPage: FC<LandingPageProps> = () => (
                 <p>Join over <b className="black">30,000 users</b> and top brands using cupcake</p>
                 <a href="shop" className="link">Buy Sprinkles</a>
               </div>
-              <div className="col-md-6 floating">
-                <img src={require('../../assets/images/hero-image.png')} />
+              <div className="col-md-6 bg-images">
+                <img src={require('../../assets/images/phone.png')} className="floating" />
+                <img src={require('../../assets/images/shoe.png')} className="floating delay-1" />
               </div>
             </div>
           </div>
@@ -27,15 +28,13 @@ const LandingPage: FC<LandingPageProps> = () => (
             <div className="row">
               <ul>
                 <li><a href="https://solana.com/" target={"_blank"}><img src={require('../../assets/images/p-1.png')} /></a></li>
-                <li><a href="https://www.asics.com/us/en-us/" target={"_blank"}><img src={require('../../assets/images/p-2.png')} /></a></li>
                 <li><a href="https://usa.tommy.com/en" target={"_blank"}><img src={require('../../assets/images/p-3.png')} /></a></li>
-                <li><a href="https://injective.com/" target={"_blank"}><img src={require('../../assets/images/p-4.png')} /></a></li>
+                <li><a href="https://injective.com/" target={"_blank"}><img src={require('../../assets/images/p-9.png')} /></a></li>
               </ul>
               <ul>
                 <li><a href="https://www.lollapalooza.com/" target={"_blank"}><img src={require('../../assets/images/p-5.png')} /></a></li>
-                <li><a href="https://stepn.com/" target={"_blank"}><img src={require('../../assets/images/p-6.png')} /></a></li>
-                <li><a href="#" target={"_blank"}><img src={require('../../assets/images/p-7.png')} /></a></li>
                 <li><a href="https://degentrashpandas.com/" target={"_blank"}><img src={require('../../assets/images/p-8.png')} /></a></li>
+                <li><a href="#" target={"_blank"}><img src={require('../../assets/images/p-7.png')} /></a></li>
               </ul>
             </div>
           </div>
@@ -44,15 +43,15 @@ const LandingPage: FC<LandingPageProps> = () => (
         <section className="partner">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-7">
+              <div className="col-md-8">
                 <h2>Partner with us<br /> today</h2>
-                <p>Work with our partner team to build a custm experience for your brand.</p>
+                <p>Work with our partner team to build a custom experience for your brand.</p>
                 <a href="https://form.typeform.com/to/aIrTJmFt?typeform-source=cupcake.com" target={"_blank"} className="link">Contact us</a>
               </div>
-              <div className="col-md-5">
+              <div className="col-md-4">
               <div className="hover14">
   <div>
-    <figure><img src={require('../../assets/images/sticker.png')} /></figure>
+    <figure><img src={require('../../assets/images/sticker 1 1.png')} /></figure>
   </div>
 </div>
               </div>
