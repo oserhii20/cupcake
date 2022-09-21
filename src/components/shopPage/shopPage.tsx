@@ -10,21 +10,24 @@ const ShopPage: FC<ShopPageProps> = () => {
       key: "5-pack",
       label: "5 Pack",
       description: "Start with birthday cards, nfts for private events,  loyalty cards, sharing your art or media, and so much more!",
-      price: "79.99"
+      price: "79.99",
+      link: "https://store.cupcake.com/60805087372/checkouts/0481d78cd1ccc61029ab2ebcff7eeede"
     },
     {
       value: 10,
       key: "10-pack",
       label: "10 Pack",
       description: "Start with birthday cards, nfts for private events,  loyalty cards, sharing your art or media, and so much more!",
-      price: "99.99"
+      price: "99.99",
+      link: "https://store.cupcake.com/60805087372/checkouts/07d10ab3b592ff522001f2d798266602"
     },
     {
       value: 50,
       key: "50-pack",
       label: "50 Pack",
       description: "Start with birthday cards, nfts for private events,  loyalty cards, sharing your art or media, and so much more!",
-      price: "200.99"
+      price: "200.99",
+      link: "https://store.cupcake.com/60805087372/checkouts/492643b56a0a23f72118cd61ff9c0ba4"
     }
   ]);
   const [selectedProduct, setSelectedProduct] = useState({
@@ -32,7 +35,8 @@ const ShopPage: FC<ShopPageProps> = () => {
     key: "5-pack",
     label: "5 Pack",
     description: "Start with birthday cards, nfts for private events,  loyalty cards, sharing your art or media, and so much more!",
-    price: "79.99"
+    price: "79.99",
+    link: "https://store.cupcake.com/60805087372/checkouts/0481d78cd1ccc61029ab2ebcff7eeede"
   });
 
   return (
@@ -53,7 +57,7 @@ const ShopPage: FC<ShopPageProps> = () => {
                 </ul>
                 <p>{selectedProduct.description}</p>
                 <h3>${selectedProduct.price}</h3>
-                <button className="link">Buy Now</button>
+                <a href={selectedProduct.link} target={"_blank"} className="link">Buy Now</a>
               </div>
             </div>
           </div>

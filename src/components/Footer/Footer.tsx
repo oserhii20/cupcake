@@ -10,7 +10,7 @@ const Footer: FC<FooterProps> = () => (
             <ul>
               <li>
                 <h6>Cupcake</h6>
-                <a href="#" className="footer_btn">Buy sprinkles</a>
+                <a href="shop" className="footer_btn">Buy sprinkles</a>
                 <a href="https://form.typeform.com/to/aIrTJmFt?typeform-source=cupcake.com" target={"_blank"} className="footer_btn">Contact us</a>
                 <a href="https://cupcake.com/wallet" target={"_blank"} className="footer_btn">Login</a>
               </li>
@@ -54,7 +54,7 @@ const Footer: FC<FooterProps> = () => (
           </div>
           <div className="row copy_wright">
             <div className="col-md-12">
-              <img src={require('../../assets/images/logo-footer.png')} />
+              <a href="/"><img src={require('../../assets/images/logo-footer.png')} /></a>
               <p>Copyright 2022 Cupcake Protocol. All rights reseerved.</p>
               <p>Cupcake Protocal is a registered service business (XXXX ID: XX).</p>
               <p>For Law Enforcement requests please direct your official document to our compliance team here.</p>
