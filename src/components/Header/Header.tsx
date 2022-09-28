@@ -8,12 +8,15 @@ const Header: FC<HeaderProps> = () => (
         <div className="row align-items-center">
           <div className="box">
             <nav className="navbar navbar-expand-lg">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <img src={require('../../assets/images/menu.png')} />
-              </button>
               <a className="navbar-brand" href="/">
                 <img src={require('../../assets/images/logo.png')} alt='cupcake' />
               </a>
+              <div className="nav-right">
+                <a href="https://cupcake.com/wallet" target={"_blank"} className="pink_link">Login</a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <img src={require('../../assets/images/menu.svg')} />
+                </button>
+              </div>
 
               <div className="collapse navbar-collapse" id="collapsibleNavbar" >
                 <ul className="navbar-nav uppercase">
@@ -22,9 +25,6 @@ const Header: FC<HeaderProps> = () => (
                   </li>
                   <li className="nav-item mobile">
                     <a href="shop" className="nav-link">Shop</a>
-                  </li>
-                  <li className="nav-item mobile">
-                    <a href="https://cupcake.com/wallet" target={"_blank"} className="nav-link">Login</a>
                   </li>
                 </ul>
               </div>

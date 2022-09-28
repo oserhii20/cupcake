@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html {
     scroll-behavior: smooth;
@@ -6,13 +6,13 @@ html {
 
 body {
     margin: 0;
-    color: #00000099;
+    color: #000000;
     font-size: 14px;
     background: #fff;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: .5px;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'Nunito-Regular', sans-serif;
 
 }
 
@@ -21,12 +21,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
     margin: 0;
     margin-bottom: 15px;
     word-wrap: break-word;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'Nunito-Black', sans-serif;
 }
 
 h1,
@@ -77,7 +76,10 @@ h6 {
 p {
     font-size: 14px;
     line-height: 22px;
+    margin: 0;
     margin-bottom: 15px;
+    word-wrap: break-word;
+    font-family: 'Nunito-Regular', sans-serif;
 }
 
 a {
@@ -88,7 +90,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #00000099 !important;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'Nunito-Regular', sans-serif;
 }
 
 a:hover {
@@ -200,11 +202,14 @@ button:active {
 .pink_link {
     border: none;
     position: relative;
-    padding: 7px 30px;
+    padding: 9px 24px;
     border-radius: 30px;
     letter-spacing: 1px;
     color: #fff !important;
     background: #FD5BE2 !important;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
 }
 
 .pink_link:hover {
@@ -234,6 +239,10 @@ header {
     width: 100%;
     background: #fff;
     padding: 5px 0px;
+}
+
+header .nav-right {
+    display: none;
 }
 
 header .box {
@@ -272,7 +281,10 @@ footer ul {
 
 footer h6 {
     color: #fff;
-    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: 'Nunito-Regular', sans-serif;
 }
 
 footer p,
@@ -340,6 +352,10 @@ footer .subscribebox .footer_check p {
 
 footer .subscribebox button {
     margin-bottom: 20px;
+    height: 39px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 footer .copy_wright a {
@@ -370,8 +386,8 @@ footer .copy_wright p {
 
 @media (max-width: 991.5px) {
     h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 42px;
+        line-height: 55px;
     }
 
     h2 {
@@ -394,12 +410,22 @@ footer .copy_wright p {
         line-height: 30px;
     }
 
-    br {
-        display: none;
+    header .nav-right {
+        display: flex;
+    }
+
+    header .nav-right .pink_link {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
     }
 
     button.navbar-toggler {
-        background: #000;
         max-width: 44px;
         padding: 6px 8px;
     }
@@ -422,9 +448,6 @@ footer .copy_wright p {
     }
     header .navbar-brand {
         margin-right: 0;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, 0);
     }
 
     div#collapsibleNavbar {
@@ -445,7 +468,6 @@ footer .copy_wright p {
 @media (max-width: 768.5px) {
     footer ul li {
         flex: 0 0 25%;
-        text-align: center;
     }
 
     footer ul li:nth-child(5) {
@@ -459,7 +481,6 @@ footer .copy_wright p {
     }
 
     .row.copy_wright {
-        text-align: center;
         padding-top: 35px;
         border-top: 1px solid #ffffff4f;
         margin-top: 30px;
@@ -478,14 +499,9 @@ footer .copy_wright p {
         padding: 4px 6px;
     }
 
-    h1 {
-        font-size: 34px;
-        line-height: 44px;
-    }
-
     h2 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 34px;
     }
 
     header .dhr_btn a {
@@ -607,21 +623,24 @@ footer .copy_wright p {
 .slider {}
 
 .slider p {
+    font-size: 20px;
+    line-height: 28px;
+    color: #666666;
+}
+
+.slider p small {
     font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
 }
 
-.slider .bg-images {
-    position: relative;
+.slider p b {
+    font-weight: 800;
 }
 
-.slider .bg-images .floating {
-    z-index: 1;
-}
-
-.slider .bg-images .floating:nth-child(2) {
-    z-index: -1;
-    position: absolute;
-    right: 0;
+.slider p strong {
+    font-weight: 800;
+    color: #000;
 }
 
 .slider .holographic_text {
@@ -630,10 +649,15 @@ footer .copy_wright p {
 
 /*-- Brand Logo --*/
 .brand_logo {
-    background: url(./assets/images/bg_image.png) no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 60px 0;
+    text-align: center;
+}
+
+.brand_logo .container {
+    padding: 30px 0 40px;
+}
+
+.brand_logo h2 {
+    text-align: center;
 }
 
 .brand_logo ul {
@@ -664,19 +688,25 @@ footer .copy_wright p {
     width: auto;
 }
 
+.brand_logo p {
+    font-family: "Nunito-Black";
+    font-size: 18px;
+    text-align: center;
+}
 
 /*-- Partner --*/
 .partner {
-    background: url(./assets/images/pattern.svg) no-repeat;
-    background-position: right center;
-    background-size: 23%;
 }
 
 .partner p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #666666;
 }
 
-
+iframe #app {
+    border: unset;
+}
 
 /*-- Responsive --*/
 @media (max-width: 991.5px) {
@@ -705,11 +735,36 @@ footer .copy_wright p {
     }
 
     .slider h1 {
-        margin-top: 35px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .slider a.link {
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .slider a.pink_link {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .slider .holographic_text {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .slider .bg-images {
+        margin-top: -130px;
+    }
+
+    section.brand_logo {
+        padding-top: 0;
+        margin-top: -100px;
     }
 
     .brand_logo ul {
@@ -723,15 +778,38 @@ footer .copy_wright p {
     .partner {
         background-size: 50%;
         background-position: 100% 38%;
+        padding-top: 0;
     }
 
     .partner .row {
-        text-align: center;
+        text-align: left;
         flex-direction: column-reverse;
     }
 
     .partner h2 {
         margin-top: 30px;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 40px;
+    }
+
+    .partner .hover14 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576.5px) {
+    .slider .bg-images {
+        margin-top: -95px;
+    }
+    
+    .brand_logo .col-6:nth-child(odd) {
+        text-align: right;
+    }
+    
+    .brand_logo .col-6:nth-child(even) {
+        margin-top: 25px;
+        text-align: left;
     }
 }
 
@@ -745,10 +823,6 @@ footer .copy_wright p {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 
-}
-
-.delay-1 {
-    animation-delay: 1s;
 }
 
 @keyframes floating {
