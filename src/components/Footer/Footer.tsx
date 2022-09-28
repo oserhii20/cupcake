@@ -45,7 +45,7 @@ const Footer: FC<FooterProps> = () => (
                       <input type="checkbox"  />
                       <p>Check this box to receive communications from Cupcake. You can ubsubscribe at any time. We look after your data - see our privacy policy.*</p>
                     </label>
-                    <button className="link">Subscribe</button>
+                    <button className="pink_link">Subscribe</button>
                     <p>This site is protected by reCAPTCHA</p>
                   </form>
                 </div>
