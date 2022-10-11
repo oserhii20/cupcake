@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import axios from 'axios';
+
 interface FooterProps {}
 
 const Footer: FC<FooterProps> = () => {
@@ -8,10 +8,6 @@ const Footer: FC<FooterProps> = () => {
   const [errorMessages, setErrorMessages] = useState({
     "email": "",
     "checkTos": ""
-  });
-  const [submitResult, setSubmitResult] = useState({
-    message: "",
-    status: true
   });
 
   const validateForms = () => {
@@ -53,43 +49,13 @@ const Footer: FC<FooterProps> = () => {
     return true;
   }
 
-  
-  const onSubmitEmail = async () => {
+  const onSubmitEmail = () => {
     if (!validateForms()) {
       return;
     }
-    const axiosInstance = axios.create({
-        baseURL: process.env.REACT_APP_API_URL,
-    })
-    const config = {
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    };
-    await axiosInstance.post(
-        `/api/subscription`,
-        { email },
-        config
-    ).then((data) => {
-      console.log(data);
-      setSubmitResult({
-        message: "Thanks for your subscription.",
-        status: true
-      });
-    }).catch((err) => {
-      console.log(err);
-      setSubmitResult({
-        message: "Network error.",
-        status: false
-      });
-    });
 
-    setTimeout(() => {
-      setSubmitResult({
-        message: "",
-        status: true
-      });
-    }, 5000);
+    console.log(email);
+    console.log(isCheckedTos);
   }
 
   return (
@@ -120,39 +86,8 @@ const Footer: FC<FooterProps> = () => {
                     <a href="https://twitter.com/cupcakeprotocol"><img src={require('../../assets/images/Twitter.png')} /></a>
                     <a href="https://www.tiktok.com/@cupcakeprotocol"><img src={require('../../assets/images/Tiktok.png')} /></a>
                     <a href="https://www.instagram.com/cupcakeprotocol/"><img src={require('../../assets/images/Instagram.png')} /></a>
-                  </span>
+                  </span>          
                 </div>
-                {/* <li>
-                  <h6>Subscribe to our newsletter</h6>
-                  <div className="subscribebox">
-                    <div>
-                      <label>
-                        <input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-                      </label>
-                      {errorMessages.email ?
-                        <span className="error-message">{errorMessages.email}</span>
-                        :
-                        ""
-                      }
-                      <label className="footer_check">
-                        <input type="checkbox" checked={isCheckedTos} onChange={(e) => e.target.checked ? setIsCheckedTos(true) : setIsCheckedTos(false)} />
-                        <p>Check this box to receive communications from Cupcake. You can ubsubscribe at any time. We look after your data - see our privacy policy.*</p>
-                      </label>
-                      {errorMessages.checkTos ?
-                        <span className="error-message">{errorMessages.checkTos}</span>
-                        :
-                        ""
-                      }
-                      <button className="pink_link" onClick={onSubmitEmail}>Subscribe</button>
-                      {submitResult.message ?
-                        <span className={submitResult.status ? "success-message" : "error-message"}>{submitResult.message}</span>
-                        :
-                        ""
-                      }
-                      <p>This site is protected by reCAPTCHA</p>
-                    </div>
-                  </div>
-                </li> */}
             </div>
             <div className="row copy_wright">
               <div className="col-md-12">
