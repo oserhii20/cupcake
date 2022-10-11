@@ -32,7 +32,7 @@ const Header: FC<HeaderProps> = () => (
             <div className="dhr_btn">
               <a href="shop">Shop</a>
               <a href="https://form.typeform.com/to/aIrTJmFt?typeform-source=cupcake.com" target={"_blank"}>Contact Us</a>
-              <a href="https://cupcake.com/wallet" target={"_blank"}>Login</a>
+              <a href="https://cupcake.com/wallet" target={"_blank"} className="pink_link">Login</a>
             </div>
           </div>
         </div>
