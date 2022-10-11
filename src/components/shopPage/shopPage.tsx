@@ -45,11 +45,11 @@ const ShopPage: FC<ShopPageProps> = () => {
         <section className="shop_page">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6 floating">
+              <div className="col-md-6">
                 <img src={require('../../assets/images/sticker 1 1.png')} />
               </div>
-              <div className="col-md-6">
-                <h2>Sprinkles</h2>
+              <div className="col-md-6 description">
+                <h1>Sprinkles</h1>
                 <ul>
                   {products.map((el) => (
                     <li key={el.key} className={selectedProduct.value == el.value ? "selected" : ""}><button onClick={() => setSelectedProduct(el)}>{el.label}</button></li>
@@ -57,7 +57,7 @@ const ShopPage: FC<ShopPageProps> = () => {
                 </ul>
                 <p>{selectedProduct.description}</p>
                 <h3>${selectedProduct.price}</h3>
-                <a href={selectedProduct.link} target={"_blank"} className="link">Buy Now</a>
+                <a href={selectedProduct.link} target={"_blank"} className="pink_link">Buy Now</a>
               </div>
             </div>
           </div>
