@@ -43,12 +43,12 @@ const ShopPage: FC<ShopPageProps> = () => {
     <div>
         {/* Shop */}
         <section className="shop_page">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-md-6">
+          <div className="container mx-auto">
+            <div className="flex flex-wrap  items-center">
+              <div className="md:w-1/2 pr-4 pl-4">
                 <img src={require('../../assets/images/sticker 1 1.png')} />
               </div>
-              <div className="col-md-6 description">
+              <div className="md:w-1/2 pr-4 pl-4 description">
                 <h1>Sprinkles</h1>
                 <ul>
                   {products.map((el) => (
