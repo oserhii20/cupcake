@@ -13,7 +13,7 @@ const [active,setActive]=useState(false);
       <div className="container mx-auto ">
         <div className="row align-items-center">
           <div className="box">
-            <nav className="relative flex flex-wrap items-center content-between py-3 px-4 ">
+            <nav className="w-full relative flex flex-wrap items-center justify-between py-3 px-4 ">
               <a className="inline-block pt-1 pb-1 mr-4 text-lg whitespace-no-wrap" href="/">
                 <img src={require('../../assets/images/logo.png')} alt='cupcake' />
               </a>
@@ -25,12 +25,12 @@ const [active,setActive]=useState(false);
               </div>
 
               <div  className={active ? 'flex-grow items-center' : 'hidden flex-grow items-center'} id="collapsibleNavbar" >
-                <ul className="flex flex-wrap list-reset pl-0 mb-0 uppercase">
+                <ul className="flex flex-wrap flex-col list-reset pl-0 mb-0 uppercase">
                   <li className="mobile">
-                    <a href="https://form.typeform.com/to/aIrTJmFt?typeform-source=cupcake.com" target={"_blank"} className="nav-link">Contact Us</a>
+                    <a href="https://form.typeform.com/to/aIrTJmFt?typeform-source=cupcake.com" target={"_blank"} className="nav-link w-full py-2 border-b border-solid border-[#f1f1f1]">Contact Us</a>
                   </li>
                   <li className="mobile"> 
-                    <a href="shop" className="nav-link">Shop</a>
+                    <a href="shop" className="nav-link w-full py-2 border-b border-solid border-[#f1f1f1]">Shop</a>
                   </li>
                 </ul>
               </div>

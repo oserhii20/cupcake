@@ -9,7 +9,7 @@ const LandingPage: FC<LandingPageProps> = () => (
     {/* Slider */}
     <div className="slider">
       <div className="container mx-auto ">
-        <div className="flex flex-wrap  items-center">
+        <div className="flex flex-wrap justify-center items-center">
           <div className="md:w-1/2 pr-4 pl-4">
             <h1>Where Physical<br /> Meets Digital<br /></h1>
             <p><b>A simple solution to making web3 frictionless</b></p>
@@ -43,7 +43,7 @@ const LandingPage: FC<LandingPageProps> = () => (
     <section className="partner">
       <div className="container mx-auto ">
         <div className="flex flex-wrap  items-center">
-          <div className="md:w-1/2 pr-4 pl-4">
+          <div className="sm:w-full md:w-1/2 pr-4 pl-4">
             <div className="hover14">
               <div className="tweet-header">
                 <img src={require("../../assets/images/tweet_logo.png")} />

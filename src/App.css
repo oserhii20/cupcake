@@ -499,7 +499,7 @@ footer .copy_wright p {
 
     div#collapsibleNavbar {
         position: absolute;
-        width: 100%;
+        width: 93%;
         background: #fff;
         z-index: 1;
         top: 61px;
@@ -631,13 +631,6 @@ footer .copy_wright p {
     .shop_page h1 {
         font-size: 68px;
         line-height: 80px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .shop_page p {
-        font-size: 14px;
-        line-height: 22px;
     }
 }
 
@@ -993,6 +986,10 @@ iframe #app {
         font-size: 40px;
         font-weight: 800;
         line-height: 40px;
+    }
+
+    .partner .hover14 {
+        max-width: 100%;
     }
 }
 
