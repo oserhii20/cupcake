@@ -61,26 +61,26 @@ const Footer: FC<FooterProps> = () => {
   return (
     <div>
         <footer>
-          <div className="container">
-            <div className="row">
-                <div className="col-6 col-md-3">
+          <div className="container mx-auto ">
+            <div className="flex flex-wrap ">
+                <div className="w-1/2 md:w-1/4 pr-4 pl-4">
                   <h6>Cupcake</h6>
                   <a href="shop" className="footer_btn">Buy sprinkles</a>
                   <a href="https://form.typeform.com/to/aIrTJmFt?typeform-source=cupcake.com" target={"_blank"} className="footer_btn">Contact us</a>
                   <a href="https://cupcake.com/wallet" target={"_blank"} className="footer_btn">Login</a>
                 </div>
-                <div className="col-6 col-md-3">
+                <div className="w-1/2 md:w-1/4 pr-4 pl-4">
                   <h6>Company</h6>
                   <a href="#" className="footer_btn">Careers</a>
                 </div>
-                <div className="col-6 col-md-3">
+                <div className="w-1/2 md:w-1/4 pr-4 pl-4">
                   <h6>Policies</h6>
                   <a href="#" className="footer_btn">Terms of use</a>
                   <a href="#" className="footer_btn">Privacy Policy</a>
                   <a href="#" className="footer_btn">Cookie Policy</a>
                   <a href="#" className="footer_btn">KYC Policy</a>
                 </div>
-                <div className="col-6 col-md-3">
+                <div className="w-1/2 md:w-1/4 pr-4 pl-4">
                   <h6>Connect</h6>
                   <span className="social">
                     <a href="https://twitter.com/cupcakeprotocol"><img src={require('../../assets/images/Twitter.png')} /></a>
@@ -89,8 +89,8 @@ const Footer: FC<FooterProps> = () => {
                   </span>          
                 </div>
             </div>
-            <div className="row copy_wright">
-              <div className="col-md-12">
+            <div className="flex flex-wrap copy_wright">
+              <div className="md:w-full pr-4 pl-4">
                 <a href="/"><img src={require('../../assets/images/logo-footer.png')} /></a>
                 <p>Copyright 2022 Cupcake Protocol. All rights reseerved.</p>
                 <p>Cupcake Protocal is a registered service business (XXXX ID: XX).</p>
